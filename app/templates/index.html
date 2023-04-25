@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="p-4 p-md-5 mb-4 text-white rounded bg-image">
+
+    <div class="col-md-6 px-0">
+        <h1 class="display-4 fst-italic">LibroNet</h1>
+        <p class="lead my-3">Visualize your reading history and visualize your relationship with books.</p>
+    </div>
+</div>
+<h5 class="mt-5">最近読んだ本</h5>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    {% for object in objects %}
+    <div class="col">
+        <div class="card shadow-sm">
+            <div class="text-center">
+                <img src="/images/books/{{object['b']['book_id']}}.jpg" height="250px" alt="{{object['b']['title']}}">
+            </div>
+
+            <div class="card-body">
+                <p class="card-text">{{object['b']['title']}} {{object['b']['sub_title']}}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="/books/{{object['b']['book_id']}}/"><button type="button"
+                                class="btn btn-sm btn-outline-secondary">View</button></a>
+                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                    </div>
+                    <div>
+                        {% for r in object['authors'] %}
+                        <small class="text-muted" style="display: block;">{{r.name}}</small>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

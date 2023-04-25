@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}Search | {{ super() }}{% endblock %}
+
+{% block content %}
+
+<h5 class="mt-5 mb-4">
+    検索結果： {{ search_word }} ( {{ total_num }} 件)
+</h5>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-2">
+    {% for book in books %}
+    <div class="col">
+        <div class="card shadow-sm">
+            <div class="text-center">
+                <img src="/images/books/{{book['b']['book_id']}}.jpg" height="250px" alt="{{book['b']['title']}}">
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{book['b']['title']}} {{book['b']['sub_title']}}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="/books/{{book['b']['book_id']}}/"><button type="button"
+                                class="btn btn-sm btn-outline-secondary">View</button></a>
+                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                    </div>
+                    <div>
+                        {% for r in book['authors'] %}
+                        <small class="text-muted" style="display: block;">{{r.name}}</small>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% if total_num > limit %}
+<section class="mt-5 al">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item {% if current_page == 1 %} disabled {% endif %}">
+                <a class="page-link" href="?q={{search_word}}&page=1&limit={{limit}}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            {% for i in range(pagination_num) %}
+            <li class="page-item {% if current_page == i + 1 %} active {% endif %}">
+                <a class="page-link" href="?q={{search_word}}&page={{i+1}}&limit={{limit}}">{{i+1}}</a>
+            </li>
+            {% endfor %}
+            <li class="page-item {% if current_page == pagination_num %} disabled {% endif %}">
+                <a class="page-link" href="?q={{search_word}}&page={{pagination_num}}&limit={{limit}}"
+                    aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</section>
+{% endif %}
+{% endblock %}

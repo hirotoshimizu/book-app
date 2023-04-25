@@ -1,0 +1,31 @@
+version: "3"
+services:
+  app:
+    build: ./app
+    container_name: my_app
+    env_file: .env
+    environment:
+      - FLASK_APP=${FLASK_APP}
+    command: sh -c "sleep 30 && flask run --host=0.0.0.0 --reload"
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/usr/src/app
+      - ./public:/usr/src/public
+    depends_on:
+      - db
+  db:
+    build: ./db
+    container_name: my_db
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - ./db/conf:/var/lib/neo4j/conf
+      - ./db/plugins:/plugins
+      - ./db/import:/var/lib/neo4j/import
+      - ./db/data:/data
+    environment:
+      - NEO4J_AUTH=neo4j/${NEO4J_PASSWORD}
+      - apoc.import.file.enabled=true
+      - apoc.import.file.use_neo4j_config=true

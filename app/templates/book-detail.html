@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ book[0]['title'] }} {{ book[0]['sub_title'] }} | Books | {{ super() }}{% endblock %}
+
+{% block content %}
+<section class="pt-5 pb-0">
+    <div class="container">
+        <div class="row g-0 g-lg-5">
+
+            <!-- Left sidebar START -->
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-md-6 col-lg-12">
+                        <div class="card shadow p-2 mb-4 text-center">
+                            <div class="rounded-3">
+                                <!-- Image -->
+                                <img src="/images/books/{{ book['b']['book_id'] }}.jpg" class="card-img"
+                                    alt="{{ book['b']['title'] }} {{ book['b']['sub_title'] }}">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-12">
+                        <div class="card card-body shadow p-4 mb-4">
+
+                            <div class="d-flex align-items-center mb-4">
+                                <span class="icon-md mb-0 bg-light rounded-3"><i
+                                        class="fas fa-graduation-cap"></i></span>
+                                <div class="ms-3">
+                                    <h6 class="mb-2">出版者</h6>
+                                    <p class="mb-1 small">{{ book.publisher }}</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-4">
+                                <span class="icon-md mb-0 bg-light rounded-3"><i
+                                        class="fas fa-graduation-cap"></i></span>
+                                <div class="ms-3">
+                                    <h6 class="mb-2">著者</h6>
+                                    {% for author in book.authors %}
+                                    <p class="mb-1 small">{{ author }}</p>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left sidebar END -->
+
+            <!-- Main content START -->
+            <div class="col-lg-8">
+
+                <!-- Title -->
+                <h3 class="mb-0">{{ book['b']['title'] }}</h3>
+                <h5 class="mb-0">{{ book['b']['sub_title'] }}</h5>
+                <!-- Content -->
+                <p class="mt-4">
+                    {{ book['b']['summary'] | safe }}
+                </p>
+                <!-- Personal info -->
+                <ul class="list-group list-group-borderless">
+                    <li class="list-group-item px-0">
+                        <span class="h6 fw-light"><i
+                                class="fas fa-fw fa-map-marker-alt text-primary me-1 me-sm-3"></i>発売:</span>
+                        <span>{{ book['b']['publication_year'] }}年</span>
+                    </li>
+                    <li class="list-group-item px-0">
+                        <span class="h6 fw-light"><i
+                                class="fas fa-fw fa-envelope text-primary me-1 me-sm-3"></i>URL:</span>
+                        <a href="{{ book['b']['url'] }}" target="_blank"><span>{{ book['b']['url'] }}</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Main content END -->
+
+        </div>
+    </div>
+</section>
+{% if related_books %}
+<h5 class="mt-5">関連のある本</h5>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    {% for book in related_books %}
+    <div class="col">
+        <div class="card shadow-sm">
+            <div class="text-center">
+                <img src="/images/books/{{ book['related_book']['book_id'] }}.jpg" height="250px"
+                    alt="{{ book['related_book']['title'] }}">
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{ book['related_book']['title'] }} {{ book['related_book']['sub_title'] }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="/books/{{ book['related_book']['book_id'] }}/"><button type="button"
+                                class="btn btn-sm btn-outline-secondary">View</button></a>
+                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                    </div>
+                    <div>
+                        {% for author in book['authors'] %}
+                        <small class="text-muted" style="display: block;">{{ author.name }}</small>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endblock %}

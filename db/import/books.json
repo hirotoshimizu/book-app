@@ -1,0 +1,606 @@
+{
+    "books": [
+        {
+            "book_id": "B078HYWY5X",
+            "title": "Clean Code",
+            "sub_title": "アジャイルソフトウェア達人の技",
+            "summary": "",
+            "publication_year": 2017,
+            "edition": 1,
+            "url": "https://amzn.asia/d/6VrDsZi",
+            "author": [
+                "Robert C.Martin"
+            ],
+            "publisher": "KADOKAWA",
+            "genre": "プログラミング",
+            "tags": [
+                "コード品質",
+                "アジャイル",
+                "ベストプラクティス"
+            ],
+            "created_at": 1680539906
+        },
+        {
+            "book_id": "B07FSBHS2V",
+            "title": "Clean Architecture",
+            "sub_title": "達人に学ぶソフトウェアの構造と設計",
+            "summary": "",
+            "publication_year": 2017,
+            "edition": 1,
+            "url": "https://amzn.asia/d/9rrmAH7",
+            "author": [
+                "Robert C.Martin"
+            ],
+            "publisher": "KADOKAWA",
+            "genre": "プログラミング",
+            "tags": [
+                "デザインパターン",
+                "ソフトウェア設計"
+            ],
+            "created_at": 1680539907
+        },
+        {
+            "book_id": "978-4274224546",
+            "title": "リファクタリング",
+            "sub_title": "既存のコードを安全に改善する (OBJECT TECHNOLOGY SERIES)",
+            "summary": "",
+            "publication_year": 2018,
+            "edition": 2,
+            "url": "https://amzn.asia/d/guUDTUI",
+            "author": [
+                "Martin Fowler"
+            ],
+            "publisher": "オーム社",
+            "genre": "プログラミング",
+            "tags": [
+                "リファクタリング",
+                "単体テスト"
+            ],
+            "created_at": 1680539908
+        },
+        {
+            "book_id": "B0BP9JRZS8",
+            "title": "継続的デリバリーのソフトウェア工学",
+            "sub_title": "もっと早く、もっと良いソフトウェアを作るための秘訣",
+            "summary": "",
+            "publication_year": 2021,
+            "edition": 1,
+            "url": "https://amzn.asia/d/eNd8qTb",
+            "author": [
+                "David Farley"
+            ],
+            "publisher": "日経BP",
+            "genre": "プログラミング",
+            "tags": [
+                "コード品質",
+                "単体テスト",
+                "ソフトウェア工学",
+                "DevOps"
+            ],
+            "created_at": 1680539909
+        },
+        {
+            "book_id": "B0BPX6YYQL",
+            "title": "事業をエンジニアリングする技術者たち",
+            "sub_title": "フルサイクル開発者がつくるCARTAの現場",
+            "summary": "",
+            "publication_year": 2022,
+            "edition": 1,
+            "url": "https://amzn.asia/d/dSSeHZo",
+            "author": [
+                "和田卓人"
+            ],
+            "publisher": "ラムダノート",
+            "genre": "コンピュータ・IT",
+            "tags": [
+                "組織文化",
+                "スタートアップ",
+                "イノベーション"
+            ],
+            "created_at": 1680539910
+        },
+        {
+            "book_id": "978-4839981723",
+            "title": "単体テストの考え方/使い方",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2022,
+            "edition": 1,
+            "url": "https://amzn.asia/d/5gtn6Y3",
+            "author": [
+                "Vladimir Khorikov"
+            ],
+            "publisher": "マイナビ出版",
+            "genre": "プログラミング",
+            "tags": [
+                "ssTDD"
+            ],
+            "created_at": 1680539911
+        },
+        {
+            "book_id": "978-4048931076",
+            "title": "Clean Craftsmanship",
+            "sub_title": "Disciplines, Standards, and Ethics",
+            "summary": "TDDのルール<br> 1. 書きたいことが分かっているコードを書くためのテストを書く（P54）",
+            "publication_year": 2021,
+            "edition": 1,
+            "url": "https://amzn.asia/d/as1TO1s",
+            "author": [
+                "Robert C.Martin"
+            ],
+            "publisher": "KADOKAWA",
+            "genre": "プログラミング",
+            "tags": [
+                "コード品質",
+                "アジャイル",
+                "TDD"
+            ],
+            "created_at": 1680539912
+        },
+        {
+            "book_id": "978-4297134198",
+            "title": "Go言語プログラミングエッセンス",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2023,
+            "edition": 1,
+            "url": "https://amzn.asia/d/0u1Oar5",
+            "author": [
+                "mattn"
+            ],
+            "publisher": "技術評論社",
+            "genre": "プログラミング",
+            "tags": [
+                "Go",
+                "入門書",
+                "基礎知識"
+            ],
+            "created_at": 1680539913
+        },
+        {
+            "book_id": "978-4873115658",
+            "title": "リーダブルコード",
+            "sub_title": "より良いコードを書くためのシンプルで実践的なテクニック (Theory in practice) ",
+            "summary": "",
+            "publication_year": 2012,
+            "edition": 1,
+            "url": "https://amzn.asia/d/7MehGDj",
+            "author": [
+                "Dustin Boswell"
+            ],
+            "publisher": "オライリージャパン",
+            "genre": "プログラミング",
+            "tags": [
+                "可読性",
+                "ベストプラクティス"
+            ],
+            "created_at": 1680539914
+        },
+        {
+            "book_id": "978-4274226298",
+            "title": "達人プログラマー",
+            "sub_title": "熟達に向けたあなたの旅",
+            "summary": "",
+            "publication_year": 2020,
+            "edition": 2,
+            "url": "https://amzn.asia/d/fTEnpHy",
+            "author": [
+                "David Thomas",
+                "Andrew Hunt"
+            ],
+            "publisher": "オーム社",
+            "genre": "プログラミング",
+            "tags": [
+                "プログラマー",
+                "スキルアップ",
+                "キャリア"
+            ],
+            "created_at": 1680539915
+        },
+        {
+            "book_id": "978-4873118222",
+            "title": "Go言語でつくるインタプリタ",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2018,
+            "edition": 1,
+            "url": "https://amzn.asia/d/gt3wIjH",
+            "author": [
+                "Thorsten Ball"
+            ],
+            "publisher": "ラムダノート",
+            "genre": "プログラミング",
+            "tags": [
+                "Go",
+                "インタプリタ",
+                "コンパイラ"
+            ],
+            "created_at": 1680539916
+        },
+        {
+            "book_id": "978-4908686122",
+            "title": "Goならわかるシステムプログラミング",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2022,
+            "edition": 2,
+            "url": "https://amzn.asia/d/3X0SezJ",
+            "author": [
+                "渋川よしき"
+            ],
+            "publisher": "オライリージャパン",
+            "genre": "プログラミング",
+            "tags": [
+                "Go",
+                "システムプログラミング",
+                "UNIX",
+                "Linux"
+            ],
+            "created_at": 1680539917
+        },
+        {
+            "book_id": "978-4873116860",
+            "title": "Web API",
+            "sub_title": "The Good Parts",
+            "summary": "",
+            "publication_year": 2014,
+            "edition": 1,
+            "url": "https://amzn.asia/d/1DbZR6K",
+            "author": [
+                "水野 貴明 "
+            ],
+            "publisher": "オライリージャパン",
+            "genre": "プログラミング",
+            "tags": [
+                "RESTful API",
+                "HTTP"
+            ],
+            "created_at": 1680539918
+        },
+        {
+            "book_id": "978-4873119656",
+            "title": "Googleのソフトウェアエンジニアリング",
+            "sub_title": "持続可能なプログラミングを支える技術、文化、プロセス",
+            "summary": "",
+            "publication_year": 2021,
+            "edition": 1,
+            "url": "https://amzn.asia/d/0EmFBq8",
+            "author": [
+                "Titus Winters",
+                "Tom Manshreck"
+            ],
+            "publisher": "オライリージャパン",
+            "genre": "コンピュータ・IT",
+            "tags": [
+                "ソフトウェアエンジニアリング",
+                "組織文化"
+            ],
+            "created_at": 1680539919
+        },
+        {
+            "book_id": "978-4796880015",
+            "title": "それがぼくには楽しかったから",
+            "sub_title": "全世界を巻き込んだリナックス革命の真実",
+            "summary": "",
+            "publication_year": 2001,
+            "edition": 1,
+            "url": "https://amzn.asia/d/7ulvuGJ",
+            "author": [
+                "リーナス トーバルズ",
+                "デイビッド・ダイヤモンド"
+            ],
+            "publisher": "小学館プロダクション",
+            "genre": "伝記・自伝・回想録",
+            "tags": [
+                "UNIX",
+                "Linux"
+            ],
+            "created_at": 1680539920
+        },
+        {
+            "book_id": "978-4274064067",
+            "title": "UNIXという考え方",
+            "sub_title": "その設計思想と哲学",
+            "summary": "",
+            "publication_year": 2001,
+            "edition": 1,
+            "url": "https://amzn.asia/d/asE2m0f",
+            "author": [
+                "Mike Gancarz"
+            ],
+            "publisher": "オーム社",
+            "genre": "コンピュータ・IT",
+            "tags": [
+                "UNIX",
+                "UNIX文化史",
+                "UNIXコマンド"
+            ],
+            "created_at": 1680539921
+        },
+        {
+            "book_id": "978-4297131487",
+            "title": "［試して理解］Linuxのしくみ",
+            "sub_title": "実験と図解で学ぶOS、仮想マシン、コンテナの基礎知識",
+            "summary": "",
+            "publication_year": 2022,
+            "edition": 1,
+            "url": "https://amzn.asia/d/bJdnlIr",
+            "author": [
+                "武内 覚"
+            ],
+            "publisher": "技術評論社",
+            "genre": "プログラミング",
+            "tags": [
+                "OS",
+                "ハードウェア",
+                "コンテナ",
+                "UNIX",
+                "Linux"
+            ],
+            "created_at": 1680539922
+        },
+        {
+            "book_id": "978-4873119762",
+            "title": "Head Firstデザインパターン",
+            "sub_title": "頭とからだで覚えるデザインパターンの基本",
+            "summary": "",
+            "publication_year": 2022,
+            "edition": 2,
+            "url": "https://amzn.asia/d/4Fz4HPs",
+            "author": [
+                "Eric Freeman",
+                "Elisabeth Robso"
+            ],
+            "publisher": "オライリージャパン",
+            "genre": "プログラミング",
+            "tags": [
+                "オブジェクト指向",
+                "入門書",
+                "デザインパターン"
+            ],
+            "created_at": 1680539923
+        },
+        {
+            "book_id": "B09HK66P5X",
+            "title": "Java言語で学ぶデザインパターン入門",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2021,
+            "edition": 3,
+            "url": "https://amzn.asia/d/6jlcAIU",
+            "author": [
+                "結城 浩"
+            ],
+            "publisher": "SBクリエイティブ",
+            "genre": "プログラミング",
+            "tags": [
+                "Java",
+                "オブジェクト指向",
+                "デザインパターン"
+            ],
+            "created_at": 1680539924
+        },
+        {
+            "book_id": "978-4621066041",
+            "title": "オブジェクト指向のこころ ",
+            "sub_title": "(SOFTWARE PATTERNS SERIES)",
+            "summary": "",
+            "publication_year": 2014,
+            "edition": 1,
+            "url": "https://amzn.asia/d/7wKAELq",
+            "author": [
+                "アラン・シャロウェイ",
+                "ジェームズ・R・トロット"
+            ],
+            "publisher": "丸善出版",
+            "genre": "プログラミング",
+            "tags": [
+                "プログラミング思想",
+                "ソフトウェア設計",
+                "デザインパターン"
+            ],
+            "created_at": 1680539925
+        },
+        {
+            "book_id": "B079S4STTV",
+            "title": "CODE",
+            "sub_title": "コードから見たコンピュータのからくり",
+            "summary": "",
+            "publication_year": 2003,
+            "edition": 1,
+            "url": "https://amzn.asia/d/aGzkhR5",
+            "author": [
+                "Charles Petzold "
+            ],
+            "publisher": "日経BP",
+            "genre": "コンピュータ・IT",
+            "tags": [
+                "暗号",
+                "歴史"
+            ],
+            "created_at": 1680539926
+        },
+        {
+            "book_id": "978-4798157603",
+            "title": "テスト駆動Python",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2018,
+            "edition": 1,
+            "url": "https://amzn.asia/d/8o1LS1Z",
+            "author": [
+                "Brian Okken"
+            ],
+            "publisher": "翔泳社",
+            "genre": "プログラミング",
+            "tags": [
+                "TDD",
+                "単体テスト"
+            ],
+            "created_at": 1680539927
+        },
+        {
+            "book_id": "978-4274217883",
+            "title": "テスト駆動開発",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2017,
+            "edition": 1,
+            "url": "https://amzn.asia/d/j7rZgub",
+            "author": [
+                "Kent Beck"
+            ],
+            "publisher": "オーム社",
+            "genre": "プログラミング",
+            "tags": [
+                "TDD",
+                "単体テスト",
+                "リファクタリング"
+            ],
+            "created_at": 1680539928
+        },
+        {
+            "book_id": "978-4873117126",
+            "title": "コンピュータシステムの理論と実装",
+            "sub_title": "モダンなコンピュータの作り方",
+            "summary": "",
+            "publication_year": 2015,
+            "edition": 1,
+            "url": "https://amzn.asia/d/4eXliZw",
+            "author": [
+                "Noam Nisan",
+                "Shimon Schocken"
+            ],
+            "publisher": "オライリージャパン",
+            "genre": "プログラミング",
+            "tags": [
+                "システム",
+                "コンパイラ",
+                "NAND"
+            ],
+            "created_at": 1680539929
+        },
+        {
+            "book_id": "978-4873119038",
+            "title": "Real World HTTP",
+            "sub_title": "歴史とコードに学ぶインターネットとウェブ技術",
+            "summary": "",
+            "publication_year": 2020,
+            "edition": 2,
+            "url": "https://amzn.asia/d/994IV2w",
+            "author": [
+                "渋川よしき"
+            ],
+            "publisher": "オライリージャパン",
+            "genre": "プログラミング",
+            "tags": [
+                "HTTP",
+                "Go",
+                "インターネット",
+                "ウェブ"
+            ],
+            "created_at": 1680539930
+        },
+        {
+            "book_id": "B014H2R8XS",
+            "title": "インテル",
+            "sub_title": "世界で最も重要な会社の産業史",
+            "summary": "",
+            "publication_year": 2015,
+            "edition": 1,
+            "url": "https://amzn.asia/d/2tIoOR1",
+            "author": [
+                "マイケル マローン"
+            ],
+            "publisher": "文藝春秋",
+            "genre": "ビジネス・経済",
+            "tags": [
+                "ムーアの法則",
+                "半導体",
+                "産業史"
+            ],
+            "created_at": 1680539931
+        },
+        {
+            "book_id": "B09W99H2LL",
+            "title": "AI技術史",
+            "sub_title": "考える機械への道とディープラーニング",
+            "summary": "",
+            "publication_year": 2022,
+            "edition": 1,
+            "url": "https://amzn.asia/d/52i2wHM",
+            "author": [
+                "Michael Wooldridge "
+            ],
+            "publisher": "インプレス",
+            "genre": "コンピュータ・IT",
+            "tags": [
+                "人工知能",
+                "機会学習",
+                "ディープラーニング",
+                "歴史"
+            ],
+            "created_at": 1680539932
+        },
+        {
+            "book_id": "B09LYHKDVP",
+            "title": "2030 半導体の地政学",
+            "sub_title": "戦略物資を支配するのは誰か",
+            "summary": "",
+            "publication_year": 2021,
+            "edition": 1,
+            "url": "https://amzn.asia/d/cw3lvdw",
+            "author": [
+                "太田泰彦 "
+            ],
+            "publisher": "日経BP",
+            "genre": "ビジネス・経済",
+            "tags": [
+                "半導体",
+                "地政学"
+            ],
+            "created_at": 1680539933
+        },
+        {
+            "book_id": "B09JNWM6KL",
+            "title": "ディープラーニング",
+            "sub_title": "学習する機械",
+            "summary": "",
+            "publication_year": 2021,
+            "edition": 1,
+            "url": "https://amzn.asia/d/1LZsspM",
+            "author": [
+                "ヤン・ルカン"
+            ],
+            "publisher": "講談社",
+            "genre": "コンピュータ・IT",
+            "tags": [
+                "人工知能",
+                "機会学習",
+                "ディープラーニング",
+                "歴史"
+            ],
+            "created_at": 1680594780
+        },
+        {
+            "book_id": "B00GSHI04M",
+            "title": "闘うプログラマー",
+            "sub_title": "ビル・ゲイツの野望を担った男達",
+            "summary": "",
+            "publication_year": 2009,
+            "edition": 1,
+            "url": "https://amzn.asia/d/8WutnO1",
+            "author": [
+                "G パスカル ザカリー"
+            ],
+            "publisher": "日経BP",
+            "genre": "コンピュータ・IT",
+            "tags": [
+                "プログラマー",
+                "マイクロソフト",
+                "ビル・ゲイツ"
+            ],
+            "created_at": 1680594782
+        }
+    ]
+}

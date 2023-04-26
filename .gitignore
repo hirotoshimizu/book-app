@@ -12,6 +12,7 @@ build/
 *.egg-info/
 
 /db/*
+!/db/Dockerfile
 !/db/conf
 !/db/import
 !/db/plugins

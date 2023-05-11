@@ -24,6 +24,7 @@ another_book = Book(
 another_test = {
     "genre": "テストジャンル2",
     "genre_en": "test_genre_2",
+    "genre_uuid": "3146dad5-cafb-4a21-a64b-80eabbd44152",
     "publisher": "test_publisher_2",
     "author": "John Doe 2",
     "tag": "test_tag",
@@ -49,7 +50,7 @@ def test_register(app):
         tag_dao = TagDAO(driver)
         publisher_dao = PublisherDAO(driver)
 
-        genre_dao.register(test["genre"], test["genre_en"])
+        genre_dao.register(test["genre"], test["genre_en"], test["genre_uuid"])
         book_dao.register(
             book, test["genre"], test["tag"], test["publisher"], test["author"]
         )
@@ -58,7 +59,7 @@ def test_register(app):
 
         author_dao.delete(test["author"])
         book_dao.delete(book.book_id)
-        genre_dao.delete(test["genre"])
+        genre_dao.delete(test["genre_uuid"])
         tag_dao.delete(test["tag"])
         publisher_dao.delete(test["publisher"])
 
@@ -75,7 +76,7 @@ def test_delete(app):
         tag_dao = TagDAO(driver)
         publisher_dao = PublisherDAO(driver)
 
-        genre_dao.register(test["genre"], test["genre_en"])
+        genre_dao.register(test["genre"], test["genre_en"], test["genre_uuid"])
         book_dao.register(
             book, test["genre"], test["tag"], test["publisher"], test["author"]
         )
@@ -83,7 +84,7 @@ def test_delete(app):
 
         author_dao.delete(test["author"])
         book_dao.delete(book.book_id)
-        genre_dao.delete(test["genre"])
+        genre_dao.delete(test["genre_uuid"])
         tag_dao.delete(test["tag"])
         publisher_dao.delete(test["publisher"])
         delete_result = book_dao.search(book.book_id)
@@ -104,7 +105,7 @@ def test_get_total_count(app):
 
         before_test_add = book_dao.get_total_count()
 
-        genre_dao.register(test["genre"], test["genre_en"])
+        genre_dao.register(test["genre"], test["genre_en"], test["genre_uuid"])
         book_dao.register(
             book, test["genre"], test["tag"], test["publisher"], test["author"]
         )
@@ -113,7 +114,7 @@ def test_get_total_count(app):
 
         author_dao.delete(test["author"])
         book_dao.delete(book.book_id)
-        genre_dao.delete(test["genre"])
+        genre_dao.delete(test["genre_uuid"])
         tag_dao.delete(test["tag"])
         publisher_dao.delete(test["publisher"])
 
@@ -147,7 +148,9 @@ def test_relate(register_test_data):
     author_dao = AuthorDAO(driver)
     publisher_dao = PublisherDAO(driver)
 
-    genre_dao.register(another_test["genre"], another_test["genre_en"])
+    genre_dao.register(
+        another_test["genre"], another_test["genre_en"], another_test["genre_uuid"]
+    )
     book_dao.register(
         another_book,
         another_test["genre"],
@@ -160,7 +163,7 @@ def test_relate(register_test_data):
 
     book_dao.delete(another_book.book_id)
     author_dao.delete(another_test["author"])
-    genre_dao.delete(another_test["genre"])
+    genre_dao.delete(another_test["genre_uuid"])
     tag_dao.delete(another_test["tag"])
     publisher_dao.delete(another_test["publisher"])
 

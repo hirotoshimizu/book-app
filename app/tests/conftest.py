@@ -50,6 +50,7 @@ book = Book(
 test = {
     "genre": "テストジャンル",
     "genre_en": "test_genre",
+    "genre_uuid": "0fd45a74-d64d-4e6e-9631-b72d7821dbbe",
     "publisher": "test_publisher",
     "author": "John Doe",
     "tag": "test_tag",
@@ -67,13 +68,13 @@ def register_test_data(app):
         author_dao = AuthorDAO(driver)
         publisher_dao = PublisherDAO(driver)
 
-        genre_dao.register(test["genre"], test["genre_en"])
+        genre_dao.register(test["genre"], test["genre_en"], test["genre_uuid"])
         book_dao.register(
             book, test["genre"], test["tag"], test["publisher"], test["author"]
         )
         yield
         book_dao.delete(book.book_id)
         author_dao.delete(test["author"])
-        genre_dao.delete(test["genre"])
+        genre_dao.delete(test["genre_uuid"])
         tag_dao.delete(test["tag"])
         publisher_dao.delete(test["publisher"])

@@ -1,0 +1,33 @@
+{% extends 'admin/base.html' %}
+
+{% block title %} {% if title %}{{ title.name }} {% else %} genres {% endif %} | {{ super() }}{% endblock %}
+
+{% block header_title %}Genre 一覧{% endblock %}
+
+{% block header_button %}
+<a href="/admin/genre/register"><button type="button" class="btn btn-primary">新規作成</button></a>
+{% endblock header_button %}
+
+{% block content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">name</th>
+            <th scope="col">name en</th>
+            <th scope="col">uuid</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for genre in genres %}
+        <tr>
+            <td>{{genre.name}}</td>
+            <td>{{genre.name_en}}</td>
+            <td>{{genre.uuid}}</td>
+            <td><a href="/admin/genres/{{genre.uuid}}"><button type="button" class="btn btn-primary">編集</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}

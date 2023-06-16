@@ -13,7 +13,11 @@
     <div class="col">
         <div class="card shadow-sm">
             <div class="text-center">
-                <img src="/images/books/{{book['b']['book_id']}}.jpg" height="250px" alt="{{book['b']['title']}}">
+                {% if book['b']['image'] %}
+                <img src="/images/books/{{book['b']['image']}}" height="250px" alt="{{book['b']['title']}}">
+                {% else %}
+                <img src="/images/books/no-image.jpg" height="250px" alt="no-iamge">
+                {% endif %}
             </div>
             <div class="card-body">
                 <p class="card-text">{{book['b']['title']}} {{book['b']['sub_title']}}</p>
@@ -21,7 +25,6 @@
                     <div class="btn-group">
                         <a href="/books/{{book['b']['book_id']}}/"><button type="button"
                                 class="btn btn-sm btn-outline-secondary">View</button></a>
-                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                     </div>
                     <div>
                         {% for r in book['authors'] %}

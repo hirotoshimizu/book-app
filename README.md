@@ -26,5 +26,8 @@ docker-compose up
 ```python
 http://127.0.0.1:5000/
 http://127.0.0.1:5000/admin/
+
+ログイン Email/Password
+admin@admin.com
+password
 ```
-※管理画面ログインは実装中

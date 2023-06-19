@@ -548,7 +548,8 @@
             "tags": [
                 "システム",
                 "コンパイラ",
-                "NAND"
+                "NAND",
+                "コンピュータアーキテクチャ"
             ],
             "created_at": 1680539929
         },
@@ -691,6 +692,378 @@
                 "ビル・ゲイツ"
             ],
             "created_at": 1680594782
+        },
+        {
+            "book_id": "978-4873118659",
+            "image": "978-4873118659.jpg",
+            "title": "Raspberry Piで学ぶコンピュータアーキテクチャ",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2019,
+            "edition": 1,
+            "url": "https://amzn.asia/d/hA8o11f",
+            "author": [
+                "Eben Upton",
+                "Jeff Duntemann",
+                "Ralph Roberts"
+            ],
+            "publisher": "オライリージャパン",
+            "genre": "b3b522e2-675f-4bcf-89ec-e274ca8e928f",
+            "genre_name": "コンピュータ・IT",
+            "genre_name_en": "computer_it",
+            "tags": [
+                "Raspberry Pi",
+                "コンピュータアーキテクチャ"
+            ],
+            "created_at": 1680594783
+        },
+        {
+            "book_id": "978-4822285357",
+            "image": "978-4822285357.jpg",
+            "title": "The DevOps 逆転だ!",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2014,
+            "edition": 1,
+            "url": "https://amzn.asia/d/6ZeGioc",
+            "author": [
+                "ジーン・キム"
+            ],
+            "publisher": "日経BP",
+            "genre": "b3b522e2-675f-4bcf-89ec-e274ca8e928f",
+            "genre_name": "コンピュータ・IT",
+            "genre_name_en": "computer_it",
+            "tags": [
+                "DevOps"
+            ],
+            "created_at": 1680594784
+        },
+        {
+            "book_id": "978-4822295967",
+            "image": "978-4822295967.jpg",
+            "title": "The DevOps 勝利をつかめ!",
+            "sub_title": "技術的負債を一掃せよ",
+            "summary": "",
+            "publication_year": 2020,
+            "edition": 1,
+            "url": "https://amzn.asia/d/3ethSIw",
+            "author": [
+                "ジーン・キム"
+            ],
+            "publisher": "日経BP",
+            "genre": "b3b522e2-675f-4bcf-89ec-e274ca8e928f",
+            "genre_name": "コンピュータ・IT",
+            "genre_name_en": "computer_it",
+            "tags": [
+                "DevOps"
+            ],
+            "created_at": 1680594785
+        },
+        {
+            "book_id": "B01N7JZXMD",
+            "image": "B01N7JZXMD.jpg",
+            "title": "まつもとゆきひろ 言語のしくみ",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2016,
+            "edition": 1,
+            "url": "https://amzn.asia/d/8cNg2wk",
+            "author": [
+                "まつもとゆきひろ"
+            ],
+            "publisher": "日経BP",
+            "genre": "933d5a47-551f-41ef-9441-2fae164042d1",
+            "genre_name": "プログラミング",
+            "genre_name_en": "programming",
+            "tags": [
+                "AST",
+                "コンパイラー"
+            ],
+            "created_at": 1680594786
+        },
+        {
+            "book_id": "B00HQ6O7LY",
+            "image": "B00HQ6O7LY.jpg",
+            "title": "アップルを創った怪物",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2008,
+            "edition": 1,
+            "url": "https://amzn.asia/d/cjStc1R",
+            "author": [
+                "スティーブ・ウォズニアック"
+            ],
+            "publisher": "ダイヤモンド社",
+            "genre": "b3b522e2-675f-4bcf-89ec-e274ca8e928f",
+            "genre_name": "コンピュータ・IT",
+            "genre_name_en": "computer_it",
+            "tags": [
+                "Apple"
+            ],
+            "created_at": 1680594787
+        },
+        {
+            "book_id": "978-4873118864",
+            "image": "978-4873118864.jpg",
+            "title": "レガシーコードからの脱却",
+            "sub_title": "ソフトウェアの寿命を延ばし価値を高める9つのプラクティス",
+            "summary": "",
+            "publication_year": 2019,
+            "edition": 1,
+            "url": "https://amzn.asia/d/efc8WX2",
+            "author": [
+                "David Scott Bernstein "
+            ],
+            "publisher": "オライリージャパン",
+            "genre": "b3b522e2-675f-4bcf-89ec-e274ca8e928f",
+            "genre_name": "コンピュータ・IT",
+            "genre_name_en": "computer_it",
+            "tags": [
+                "レガシーコード"
+            ],
+            "created_at": 1680594788
+        },
+        {
+            "book_id": "978-1617298677",
+            "image": "978-1617298677.jpg",
+            "title": "The Programmer's Brain",
+            "sub_title": "What every programmer needs to know about cognition",
+            "summary": "",
+            "publication_year": 2021,
+            "edition": 1,
+            "url": "https://amzn.asia/d/fG4BRG6",
+            "author": [
+                "Felienne Hermans"
+            ],
+            "publisher": "Manning",
+            "genre": "f635a0a0-470e-5066-aa22-a1004c81fa5e",
+            "genre_name": "神経科学",
+            "genre_name_en": "neuroscience",
+            "tags": [
+                "プログラマー",
+                "脳"
+            ],
+            "created_at": 1680594789
+        },
+        {
+            "book_id": "978-1680508604",
+            "image": "978-1680508604.jpg",
+            "title": "Python Testing With Pytest",
+            "sub_title": "Simple, Rapid, Effective, and Scalable",
+            "summary": "",
+            "publication_year": 2009,
+            "edition": 1,
+            "url": "https://amzn.asia/d/fV8FD54",
+            "author": [
+                "Brian Okken"
+            ],
+            "publisher": "Pragmatic Bookshelf",
+            "genre": "933d5a47-551f-41ef-9441-2fae164042d1",
+            "genre_name": "プログラミング",
+            "genre_name_en": "programming",
+            "tags": [
+                "TDD",
+                "単体テスト"
+            ],
+            "created_at": 1680594790
+        },
+        {
+            "book_id": "978-4502350610",
+            "image": "978-4502350610.jpg",
+            "title": "あなたの会社もブロックチェーンを始めませんか?",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2009,
+            "edition": 1,
+            "url": "",
+            "author": [
+                "日本アイ・ビー・エム株式会社"
+            ],
+            "publisher": "中央経済社",
+            "genre": "127bd2eb-0ed9-468f-abcb-be7ab2caa8e2",
+            "genre_name": "ビジネス・経済",
+            "genre_name_en": "business_economics",
+            "tags": [
+                "ブロックチェーン"
+            ],
+            "created_at": 1680594791
+        },
+        {
+            "book_id": "978-4873119540",
+            "image": "978-4873119540.jpg",
+            "title": "詳説 データベース",
+            "sub_title": "ストレージエンジンと分散データシステムの仕組み",
+            "summary": "",
+            "publication_year": 2021,
+            "edition": 1,
+            "url": "https://amzn.asia/d/65U1N5y",
+            "author": [
+                "Alex Petrov"
+            ],
+            "publisher": "オライリージャパン",
+            "genre": "b3b522e2-675f-4bcf-89ec-e274ca8e928f",
+            "genre_name": "コンピュータ・IT",
+            "genre_name_en": "computer_it",
+            "tags": [
+                "DB",
+                "分散システム"
+            ],
+            "created_at": 1680594792
+        },
+        {
+            "book_id": "978-4873118703",
+            "image": "978-4873118703.jpg",
+            "title": "データ指向アプリケーションデザイン",
+            "sub_title": "信頼性、拡張性、保守性の高い分散システム設計の原理",
+            "summary": "",
+            "publication_year": 2019,
+            "edition": 1,
+            "url": "https://amzn.asia/d/bcVOdrI",
+            "author": [
+                "Martin Kleppmann"
+            ],
+            "publisher": "オライリージャパン",
+            "genre": "b3b522e2-675f-4bcf-89ec-e274ca8e928f",
+            "genre_name": "コンピュータ・IT",
+            "genre_name_en": "computer_it",
+            "tags": [
+                "DB",
+                "分散システム"
+            ],
+            "created_at": 1680594793
+        },
+        {
+            "book_id": "479739448X",
+            "image": "479739448X.jpg",
+            "title": "DNSがよくわかる教科書",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2018,
+            "edition": 1,
+            "url": "https://amzn.asia/d/gbSpvZ8",
+            "author": [
+                "株式会社日本レジストリサービス(JPRS)"
+            ],
+            "publisher": "SBクリエイティブ",
+            "genre": "b3b522e2-675f-4bcf-89ec-e274ca8e928f",
+            "genre_name": "コンピュータ・IT",
+            "genre_name_en": "computer_it",
+            "tags": [
+                "DNS",
+                "分散システム"
+            ],
+            "created_at": 1680594794
+        },
+        {
+            "book_id": "B07D3N4NQM",
+            "image": "B07D3N4NQM.jpg",
+            "title": "睡眠こそ最強の解決策である",
+            "sub_title": "",
+            "summary": "",
+            "publication_year": 2018,
+            "edition": 1,
+            "url": "https://amzn.asia/d/18Icy1K",
+            "author": [
+                "マシュー・ウォーカー"
+            ],
+            "publisher": "SBクリエイティブ",
+            "genre": "f635a0a0-470e-5066-aa22-a1004c81fa5e",
+            "genre_name": "神経科学",
+            "genre_name_en": "neuroscience",
+            "tags": [
+                "睡眠",
+                "脳"
+            ],
+            "created_at": 1680584794
+        },
+        {
+            "book_id": "978-4140813539",
+            "image": "978-4140813539.jpg",
+            "title": "脳を鍛えるには運動しかない!",
+            "sub_title": "最新科学でわかった脳細胞の増やし方",
+            "summary": "",
+            "publication_year": 2009,
+            "edition": 1,
+            "url": "https://amzn.asia/d/0djoUKS",
+            "author": [
+                "ジョン J. レイティ",
+                "エリック ヘイガーマン"
+            ],
+            "publisher": "NHK出版",
+            "genre": "f635a0a0-470e-5066-aa22-a1004c81fa5e",
+            "genre_name": "神経科学",
+            "genre_name_en": "neuroscience",
+            "tags": [
+                "睡眠",
+                "脳"
+            ],
+            "created_at": 1680584795
+        },
+        {
+            "book_id": "978-4799324707",
+            "image": "978-4799324707.jpg",
+            "title": "最高の脳で働く方法",
+            "sub_title": "Your Brain at Work",
+            "summary": "",
+            "publication_year": 2019,
+            "edition": 1,
+            "url": "https://amzn.asia/d/9o3OD7Z",
+            "author": [
+                "デイビッド・ロック "
+            ],
+            "publisher": "ディスカヴァー・トゥエンティワン",
+            "genre": "f635a0a0-470e-5066-aa22-a1004c81fa5e",
+            "genre_name": "神経科学",
+            "genre_name_en": "neuroscience",
+            "tags": [
+                "脳"
+            ],
+            "created_at": 1680584796
+        },
+        {
+            "book_id": "978-4757160668",
+            "image": "978-4757160668.jpg",
+            "title": "使える脳の鍛え方",
+            "sub_title": "成功する学習",
+            "summary": "",
+            "publication_year": 2016,
+            "edition": 1,
+            "url": "https://amzn.asia/d/f93ouT2",
+            "author": [
+                "ピーター・ブラウン",
+                "ヘンリー・ローディガー"
+            ],
+            "publisher": "NTT出版",
+            "genre": "f635a0a0-470e-5066-aa22-a1004c81fa5e",
+            "genre_name": "神経科学",
+            "genre_name_en": "neuroscience",
+            "tags": [
+                "脳",
+                "学習方法"
+            ],
+            "created_at": 1680594797
+        },
+        {
+            "book_id": "978-4150504106",
+            "image": "978-4150504106.jpg",
+            "title": "ファスト&スロー(上)",
+            "sub_title": "あなたの意思はどのように決まるか?",
+            "summary": "",
+            "publication_year": 2014,
+            "edition": 1,
+            "url": "https://amzn.asia/d/dz9MSj9",
+            "author": [
+                "ダニエル・カーネマン"
+            ],
+            "publisher": "早川書房",
+            "genre": "f635a0a0-470e-5066-aa22-a1004c81fa5e",
+            "genre_name": "神経科学",
+            "genre_name_en": "neuroscience",
+            "tags": [
+                "脳",
+                "意思"
+            ],
+            "created_at": 1687108132
         }
     ]
 }

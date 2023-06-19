@@ -1,0 +1,10 @@
+{
+    "users": [
+        {
+            "userId": "cd11f795-58ae-4138-a42b-3a3391e7ed16",
+            "email": "admin@admin.com",
+            "name": "admin",
+            "password": "$2b$12$ebKSYBU001A4wINi6EU8JOaFzNX1kKQa0PVIuOm6vBvbDnvPDVUPO"
+        }
+    ]
+}

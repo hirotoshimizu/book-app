@@ -14,8 +14,12 @@
                         <div class="card shadow p-2 mb-4 text-center">
                             <div class="rounded-3">
                                 <!-- Image -->
-                                <img src="/images/books/{{ book['b']['book_id'] }}.jpg" class="card-img"
+                                {% if book['b']['image'] %}
+                                <img src="/images/books/{{ book['b']['image'] }}" class="card-img"
                                     alt="{{ book['b']['title'] }} {{ book['b']['sub_title'] }}">
+                                {% else %}
+                                <img src="/images/books/no-image.jpg" class="card-img" alt="no-iamge">
+                                {% endif %}
                             </div>
                         </div>
                     </div>
@@ -85,8 +89,12 @@
     <div class="col">
         <div class="card shadow-sm">
             <div class="text-center">
-                <img src="/images/books/{{ book['related_book']['book_id'] }}.jpg" height="250px"
+                {% if book['related_book']['image'] %}
+                <img src="/images/books/{{ book['related_book']['image'] }}" height="250px"
                     alt="{{ book['related_book']['title'] }}">
+                {% else %}
+                <img src="/images/books/no-image.jpg" height="250px" alt="no-iamge">
+                {% endif %}
             </div>
             <div class="card-body">
                 <p class="card-text">{{ book['related_book']['title'] }} {{ book['related_book']['sub_title'] }}</p>

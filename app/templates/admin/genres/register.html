@@ -1,0 +1,40 @@
+{% extends 'admin/base.html' %}
+
+{% block title %} {% if title %}{{ title.name }} {% else %} genre-create {% endif %} | {{ super() }}{% endblock %}
+
+{% block header_title %}Genre 新規作成{% endblock %}
+
+{% block content %}
+<div class="container detail">
+    <form action="" method="post">
+        {{ form.csrf_token }}
+        <span style="color: red;">
+            {% for error in form.name.errors %}
+            {{ error }}
+            {% endfor %}
+            <br>
+            {% for error in form.name_en.errors %}
+            {{ error }}
+            {% endfor %}
+        </span>
+
+        <div class="row">
+            <div class="col-2">{{ form.name.label }}</div>
+            <div class="col-8">
+                {{ form.name(class_="form-control") }}
+            </div>
+            <div class="w-100"></div>
+        </div>
+        <div class="row">
+            <div class="col-2">{{ form.name_en.label }}</div>
+            <div class="col-8">
+                {{ form.name_en(class_="form-control") }}
+            </div>
+            <div class="w-100"></div>
+        </div>
+        <div class="d-grid gap-2 d-md-block mt-5">
+            {{ form.submit(class_="btn btn-primary") }}
+        </div>
+    </form>
+</div>
+{% endblock content %}

@@ -14,7 +14,11 @@
     <div class="col">
         <div class="card shadow-sm">
             <div class="text-center">
-                <img src="/images/books/{{object['b']['book_id']}}.jpg" height="250px" alt="{{object['b']['title']}}">
+                {% if object['b']['image'] %}
+                <img src="/images/books/{{object['b']['image']}}" height="250px" alt="{{object['b']['title']}}">
+                {% else %}
+                <img src="/images/books/no-image.jpg" height="250px" alt="no-iamge">
+                {% endif %}
             </div>
 
             <div class="card-body">

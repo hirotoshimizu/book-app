@@ -1,0 +1,32 @@
+{% extends 'admin/base.html' %}
+
+{% block title %} {% if title %}{{ title.name }} {% else %} publishers {% endif %} | {{ super() }}{% endblock %}
+
+{% block header_title %}Publishers 一覧{% endblock %}
+
+{% block header_button %}
+<a href="/admin/publishers/register"><button type="button" class="btn btn-primary">新規作成</button></a>
+{% endblock header_button %}
+
+{% block content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">name</th>
+            <th scope="col">uuid</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for publisher in publishers %}
+        <tr>
+            <td>{{publisher.name}}</td>
+            <td>{{publisher.uuid}}</td>
+            <td><a href="/admin/publishers/{{publisher.uuid}}"><button type="button"
+                        class="btn btn-primary">編集</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}

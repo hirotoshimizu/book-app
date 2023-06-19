@@ -38,12 +38,11 @@ def get_detail(id):
     dao = BookDAO(current_app.driver)
     book = dao.detail(id)
     related_books = dao.relate(id)
-    # authors = dao.writen_by(id)
-    # publisher = dao.published_by(id)
-    return render_template(
-        "book-detail.html",
-        book=book,
-        related_books=related_books,
-        # authors=authors,
-        # publisher=publisher,
-    )
+
+    if book:
+        return render_template(
+            "book-detail.html",
+            book=book,
+            related_books=related_books,
+        )
+    return render_template("book-not-found.html")

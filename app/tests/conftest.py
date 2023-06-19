@@ -44,15 +44,29 @@ book = Book(
     publication_year=2023,
     edition=1,
     url="https://www.amazon.co.jp/",
+    image="test_book_123",
     created_at=int(time.time()),
 )
 
-test = {
-    "genre": "テストジャンル",
-    "genre_en": "test_genre",
-    "publisher": "test_publisher",
-    "author": "John Doe",
-    "tag": "test_tag",
+
+test_data = {
+    "author": {
+        "uuid": "03d9942a-e560-4cb7-970c-7efbb7297815",
+        "name": "John Doe",
+    },
+    "genre": {
+        "uuid": "0fd45a74-d64d-4e6e-9631-b72d7821dbbe",
+        "name": "テストジャンル",
+        "name_en": "test_genre",
+    },
+    "publisher": {
+        "uuid": "314fc552-51b7-46ce-99d8-d477d1a5ef7f",
+        "name": "test_publisher",
+    },
+    "tag": {
+        "uuid": "ac677768-a37f-444d-bac0-035a8aadb697",
+        "name": "test_tag",
+    },
 }
 
 
@@ -61,19 +75,39 @@ def register_test_data(app):
     with app.app_context():
         driver = get_driver()
 
+        author_dao = AuthorDAO(driver)
         book_dao = BookDAO(driver)
         genre_dao = GenreDAO(driver)
-        tag_dao = TagDAO(driver)
-        author_dao = AuthorDAO(driver)
         publisher_dao = PublisherDAO(driver)
+        tag_dao = TagDAO(driver)
 
-        genre_dao.register(test["genre"], test["genre_en"])
+        author_dao.register(
+            test_data["author"]["name"],
+            test_data["author"]["uuid"],
+        )
+        genre_dao.register(
+            test_data["genre"]["name"],
+            test_data["genre"]["name_en"],
+            test_data["genre"]["uuid"],
+        )
+        publisher_dao.register(
+            test_data["publisher"]["name"],
+            test_data["publisher"]["uuid"],
+        )
+        tag_dao.register(
+            test_data["tag"]["name"],
+            test_data["tag"]["uuid"],
+        )
         book_dao.register(
-            book, test["genre"], test["tag"], test["publisher"], test["author"]
+            book,
+            test_data["genre"]["name"],
+            test_data["tag"]["name"],
+            test_data["publisher"]["name"],
+            test_data["author"]["name"],
         )
         yield
         book_dao.delete(book.book_id)
-        author_dao.delete(test["author"])
-        genre_dao.delete(test["genre"])
-        tag_dao.delete(test["tag"])
-        publisher_dao.delete(test["publisher"])
+        author_dao.delete(test_data["author"]["uuid"])
+        genre_dao.delete(test_data["genre"]["uuid"])
+        tag_dao.delete(test_data["tag"]["uuid"])
+        publisher_dao.delete(test_data["publisher"]["uuid"])

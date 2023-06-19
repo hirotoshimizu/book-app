@@ -1,0 +1,62 @@
+{% extends 'admin/base.html' %}
+
+{% block title %} {% if title %}{{ title.name }} {% else %} books {% endif %} | {{ super() }}{% endblock %}
+
+{% block header_title %}Books 一覧{% endblock %}
+
+{% block header_button %}
+<a href="/admin/book/register"><button type="button" class="btn btn-primary">新規作成</button></a>
+{% endblock header_button %}
+
+{% block content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">title</th>
+            <th scope="col">sub title</th>
+            <th scope="col">authors</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+        <tr>
+            <td>{{book['b']['book_id']}}</td>
+            <td>{{book['b']['title']}}</td>
+            <td>{{book['b']['sub_title']}}</td>
+            <td>
+                {% for r in book['authors'] %}
+                {{r.name}}
+                {% endfor %}
+            </td>
+            <td><a href="/admin/books/{{book['b']['book_id']}}"><button type="button"
+                        class="btn btn-primary">編集</button></a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% if total_num > limit %}
+<section class="mt-5 al">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item {% if current_page == 1 %} disabled {% endif %}">
+                <a class="page-link" href="?page=1&limit={{limit}}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            {% for i in range(pagination_num) %}
+            <li class="page-item {% if current_page == i + 1 %} active {% endif %}">
+                <a class="page-link" href="?page={{i+1}}&limit={{limit}}">{{i+1}}</a>
+            </li>
+            {% endfor %}
+            <li class="page-item {% if current_page == pagination_num %} disabled {% endif %}">
+                <a class="page-link" href="?page={{pagination_num}}&limit={{limit}}" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</section>
+{% endif %}
+{% endblock content %}

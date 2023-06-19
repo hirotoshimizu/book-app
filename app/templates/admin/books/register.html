@@ -1,0 +1,87 @@
+{% extends 'admin/base.html' %}
+
+{% block title %} {% if title %}{{ title.name }} {% else %} genre-create {% endif %} | {{ super() }}{% endblock %}
+
+{% block header_title %}Book 新規作成{% endblock %}
+
+{% block content %}
+<div class="container detail">
+    <form action="" method="post" enctype="multipart/form-data">
+        {{ form.csrf_token }}
+        {% for field, errors in form.errors.items() %}
+        <p style="color: red;"> {{ form[field].label }}: {{ ', '.join(errors) }}</p>
+        {% endfor %}
+
+        {% if message %}
+        {{message}}
+        {% endif %}
+        <div class="row">
+            <div class="col-2">{{ form.book_id.label }}</div>
+            <div class="col-8">
+                <!-- <input class="form-control" name="book_id" type="text" value=""> -->
+                {{ form.book_id(class_="form-control") }}
+            </div>
+            <div class="w-100"></div>
+            <div class="col-2">{{ form.title.label }}</div>
+            <div class="col-8">
+                <!-- <input class="form-control" name="title" type="text" value=""> -->
+                {{ form.title(class_="form-control") }}
+            </div>
+            <div class="w-100"></div>
+            <div class="col-2">{{ form.sub_title.label }}</div>
+            <div class="col-8">
+                <!-- <input class="form-control" name="sub_title" type="text" value=""> -->
+                {{ form.sub_title(class_="form-control") }}
+            </div>
+            <div class="w-100"></div>
+            <div class="col-2">{{ form.authors.label }}</div>
+            <div class="col-8">
+                {{ form.authors(class_="form-select") }}
+            </div>
+            <div class="w-100"></div>
+            <div class="col-2">{{ form.genre.label }}</div>
+            <div class="col-8">
+                {{ form.genre(class_="form-select") }}
+            </div>
+            <div class="w-100"></div>
+            <div class="col-2">{{ form.publisher.label }}</div>
+            <div class="col-8">
+                {{ form.publisher(class_="form-select") }}
+            </div>
+            <div class="w-100"></div>
+            <div class="col-2">{{ form.tags.label }}</div>
+            <div class="col-8">
+                {{ form.tags(class_="form-select") }}
+            </div>
+            <div class="w-100"></div>
+            <div class="col-2">{{ form.summary.label }}</div>
+            <div class="col-8">
+                {{ form.summary(class_="form-control") }}
+            </div>
+            <div class="w-100"></div>
+            <div class="col-2">{{ form.edition.label }}</div>
+            <div class="col-8">
+                {{ form.edition(class_="form-select") }}
+            </div>
+            <div class="w-100"></div>
+            <div class="col-2">{{ form.publication_year.label }}</div>
+            <div class="col-8">
+                {{ form.publication_year(class_="form-select") }}
+            </div>
+            <div class="w-100"></div>
+            <div class="col-2">{{ form.url.label }}</div>
+            <div class="col-8">
+                {{ form.url(class_="form-control") }}
+            </div>
+            <div class="w-100"></div>
+            <div class="col-2">photo</div>
+            <div class="col-8">
+                <input type=file name=file>
+            </div>
+        </div>
+        <div class="d-grid gap-2 d-md-block mt-5">
+            {{ form.submit(class_="btn btn-primary") }}
+        </div>
+    </form>
+</div>
+{% endblock content %}

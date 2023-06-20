@@ -911,28 +911,6 @@
             "created_at": 1680594792
         },
         {
-            "book_id": "978-4873118703",
-            "image": "978-4873118703.jpg",
-            "title": "データ指向アプリケーションデザイン",
-            "sub_title": "信頼性、拡張性、保守性の高い分散システム設計の原理",
-            "summary": "",
-            "publication_year": 2019,
-            "edition": 1,
-            "url": "https://amzn.asia/d/bcVOdrI",
-            "author": [
-                "Martin Kleppmann"
-            ],
-            "publisher": "オライリージャパン",
-            "genre": "b3b522e2-675f-4bcf-89ec-e274ca8e928f",
-            "genre_name": "コンピュータ・IT",
-            "genre_name_en": "computer_it",
-            "tags": [
-                "DB",
-                "分散システム"
-            ],
-            "created_at": 1680594793
-        },
-        {
             "book_id": "479739448X",
             "image": "479739448X.jpg",
             "title": "DNSがよくわかる教科書",
@@ -1064,6 +1042,28 @@
                 "意思"
             ],
             "created_at": 1687108132
+        },
+        {
+            "book_id": "978-4873118703",
+            "image": "978-4873118703.jpg",
+            "title": "データ指向アプリケーションデザイン",
+            "sub_title": "信頼性、拡張性、保守性の高い分散システム設計の原理",
+            "summary": "",
+            "publication_year": 2019,
+            "edition": 1,
+            "url": "https://amzn.asia/d/bcVOdrI",
+            "author": [
+                "Martin Kleppmann"
+            ],
+            "publisher": "オライリージャパン",
+            "genre": "b3b522e2-675f-4bcf-89ec-e274ca8e928f",
+            "genre_name": "コンピュータ・IT",
+            "genre_name_en": "computer_it",
+            "tags": [
+                "DB",
+                "分散システム"
+            ],
+            "created_at": 1687108133
         }
     ]
 }
